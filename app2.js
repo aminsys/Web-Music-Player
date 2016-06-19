@@ -7,6 +7,6 @@ function page(){
 
 $( document).ready(function() {
     $('#h').click(function() {
-        $('#h').append('<embed id="embed_player" src="assets/sample.mp3" autostart="true" hidden="true"></embed>');
+        $('#h').append('<embed id="embed_player" src="assets/sample.mp3" autostart="false" hidden="true"></embed>');
     });
 });
