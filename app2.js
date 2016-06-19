@@ -5,8 +5,8 @@ function page(){
     console.log("Looper stopped!");
 }
 
-$( document).ready(function() {
-    $('#h').click(function() {
-        $('#h').append('<embed id="embed_player" src="assets/sample.mp3" autostart="false" hidden="true"></embed>');
-    });
-});
+var sample = new Audio ('assets/sample.mp3');
+
+function playSong(){
+    sample.play();
+}

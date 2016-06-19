@@ -15,6 +15,20 @@
    height: 80px;
    border-radius: 45px;
 }
+
+.song
+{
+    border: none;
+    border-radius: 30px;
+    padding: 5px 20px;
+    color: white;
+}
+
+#songs
+{
+    margin-top: 4.5cm;
+    margin-left: 3.6cm;
+}
     
 #welcome{
     display: flex;
