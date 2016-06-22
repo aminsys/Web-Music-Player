@@ -5,8 +5,19 @@ function page(){
     console.log("Looper stopped!");
 }
 
-var sample = new Audio ('assets/sample.mp3');
+var songs = [
+    'assets/sample.mp3',
+    'assets/sample2.mp3',
+    'assets/sample4.wav',
+    'assets/sample3.mp3'
+];
 
 function playSong(){
+    var randomSong = (Math.floor(Math.random() * 4));
+    var sample = new Audio (songs[randomSong]);
     sample.play();
+
+    setTimeout(function() {
+        sample.pause();
+    }, 3000);
 }

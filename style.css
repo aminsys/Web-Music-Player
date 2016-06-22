@@ -21,14 +21,20 @@
     border: none;
     border-radius: 30px;
     padding: 5px 20px;
-    color: white;
+    color: black;
     -webkit-appearance: none;
+    background-color: #FF7F2A;
 }
 
 #songs
 {
-    margin-top: 4.5cm;
-    margin-left: 3.6cm;
+    border: dotted 1px;
+    width: 78.2%;
+    height: 23.5%;
+    margin-left: 10.5%;
+    margin-top: 27.7%;
+    position: absolute;
+
 }
     
 #welcome{
@@ -45,85 +51,28 @@
    opacity: 0.5;
 }
 
-/*#audio
+#audio
 {
-    position: fixed;
-    top: 10%;
-    left: 50%;
-    margin-left: -150px;
-}*/
+    border: none;
+    background-color: transparent; /*Make the background of the button dissappear*/
+    color: transparent; /*Make text of button dissappear*/
+    /*Cover the whole div*/
+    width: 100%; 
+    height: 100%;
+    border: dotted blue; /*Delete later!*/
+}
 
-#hbd
+#audio:hover
 {
-    background-image: url('assets/hbd2.png');
+    background-color: crimson;
+    opacity: 0.1;
+}
+
+
+html
+{
+    background: url('assets/hbd2.png') no-repeat fixed;
+    -webkit-background-size: cover;
     background-size: cover;
-}
-
-.name
-{
-    font-size: 15px;
-    color: whitesmoke;
-    font-family: cursive;
-    font-style: italic;
-    /*margin-top: 580px;*/
-    position: relative;
-    cursor: pointer;
-    text-align: center;
-    width: 45px;
-    border: dotted;
-}
-
-#w, #e, #n2
-{
-    left: 1.4cm;
-    color: lightskyblue;
-    border-color: #FFF6D5;
-}
-
-#h
-{
-    color: peachpuff;
-    top: 115px;
-    left: 90px;
-    border-color: #FF5555;
-}
-
-#s
-{
-    color: yellow;
-    top: 70px;
-    left: 293px;
-    border-color: #FF7F2A;
-}
-
-#i
-{
-    color: cadetblue;
-    top: 20px;
-    left: 490px;
-    border-color: #FFE680;
-}
-
-#a
-{
-    color: mintcream;
-    top: -70px;
-    left: 18.95cm;
-    border-color: #FF8080;
-}
-
-#n
-{
-    color: darkolivegreen;
-    top: -5.5cm;
-    left: 25.2cm;
-    border-color: #FFE680;
-}
-
-#g
-{
-    top: -9.3cm;
-    left: 31.7cm;
-    border-color: #FF8080;
 }
 
