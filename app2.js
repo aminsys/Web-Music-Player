@@ -19,5 +19,5 @@ function playSong(){
 
     setTimeout(function() {
         sample.pause();
-    }, 3000);
+    }, 30000);
 }
