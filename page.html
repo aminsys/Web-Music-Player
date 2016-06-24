@@ -1,12 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv" lang="sv" >
+<html id="bg" xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv" lang="sv" >
 <head>
 	
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="content-language" content="sv" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+    <meta name="viewport" content="width=375, initial-scale=1, maximum-scale=1">
     <link rel="icon" href="assets/cake.ico">
     <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -18,8 +17,12 @@
 
 <body>
     
-    <div id="songs">
-        <button id="audio" onclick="playSong()">PLAY ME!</button>
+    <div id="play">
+        <button id="audioP" onclick="playSong()">PLAY</button>
+    </div>
+
+    <div id="stop">
+        <button id="audioS" onclick="stopSong()">STOP</button>
     </div>
     
 </body>

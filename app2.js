@@ -16,8 +16,4 @@ function playSong(){
     var randomSong = (Math.floor(Math.random() * 4));
     var sample = new Audio (songs[randomSong]);
     sample.play();
-
-    setTimeout(function() {
-        sample.pause();
-    }, 30000);
 }
