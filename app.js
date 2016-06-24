@@ -2,11 +2,7 @@ function textChange(){
     
     $(document).ready(function(){ 
         $('span').fadeOut(2000, function() {
-        $(this).text("Welcome...")
-        }).fadeIn(2000);
-        
-        $('span').fadeOut(2000, function() {
-        $(this).text("miss Hsiang Wen! 🙏")
+        $(this).text("Welcome 🙏")
         }).fadeIn(2000);
         
         $('span').fadeOut(2000, function() {

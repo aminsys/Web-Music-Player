@@ -28,7 +28,7 @@ function playSong(){
         } else {
             width = (sample.currentTime / sample.duration) * 100; 
             barProg.style.width = width + '%'; 
-            document.getElementById('procent').innerHTML = sample.currentTime | 0;
+            document.getElementById('procent').innerHTML = ((sample.currentTime / sample.duration) * 100 | 0) + '%';
         }
     }
 }
