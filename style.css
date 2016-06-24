@@ -103,3 +103,31 @@
     -webkit-background-size: cover;
 }
 
+#myProgress {
+    top: 0;
+    left:0;
+    position: absolute;
+    margin-left: 25%;
+    width: 50%;
+    height: 5px;
+    background-color: transparent;
+    opacity: 0.7;
+}
+#bar
+{
+    position: absolute;
+    width: 1%;
+    height: 100%;
+}
+
+#procent
+{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 10x;
+    color: dimgrey;
+    font-size: 20px;
+}
+

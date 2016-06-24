@@ -14,6 +14,28 @@ var songs = [
 
 function playSong(){
     var randomSong = (Math.floor(Math.random() * 4));
-    var sample = new Audio (songs[randomSong]);
+    sample = new Audio (songs[randomSong]);
     sample.play();
+    
+    var barProg = document.getElementById("bar");
+    barProg.style.backgroundColor = 'crimson'; 
+    var width = 1;
+    var id = setInterval(frame, sample.currentTime);
+    function frame() {
+        if (width >= 100) {
+            barProg.style.backgroundColor = 'limegreen';
+            clearInterval(id);
+        } else {
+            width = (sample.currentTime / sample.duration) * 100; 
+            barProg.style.width = width + '%'; 
+            document.getElementById('procent').innerHTML = sample.currentTime | 0;
+        }
+    }
+}
+
+function stopSong(){
+    if (!sample.paused){
+        sample.pause();
+        console.log('stopping a playing song!');
+    }
 }
