@@ -28,8 +28,6 @@ var songs = [
     'assets/beyonce/luvntp.mp3'
 ];
 
-console.log(songs.length);
-
 function playSong(){
     var randomSong = (Math.floor(Math.random() * songs.length));
     sample = new Audio (songs[randomSong]);
@@ -43,6 +41,7 @@ function playSong(){
     function frame() {
         if (width >= 100) {
             barProg.style.backgroundColor = 'limegreen';
+            document.getElementById('procent').style.color = 'limegreen';
             clearInterval(id);
         } else {
             width = (sample.currentTime / sample.duration) * 100; 
