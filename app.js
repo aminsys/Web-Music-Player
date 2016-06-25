@@ -6,7 +6,7 @@ function textChange(){
         }).fadeIn(2000);
         
         $('span').fadeOut(2000, function() {
-        $(this).text("Please Enter! 👈")
+        $(this).text("Please Enter")
         }).fadeIn(2000);
     })
 
