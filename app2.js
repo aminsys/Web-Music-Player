@@ -27,13 +27,15 @@ var songs = [
     'assets/Janet/When I Think Of You.mp3',
     'assets/beyonce/luvntp.mp3'
 ];
+console.log(songs.length);
 
 function playSong(){
     var randomSong = (Math.floor(Math.random() * songs.length));
     sample = new Audio (songs[randomSong]);
     sample.play();
     document.getElementById('audioP').disabled = true;
-
+    console.log(randomSong);
+    
     var barProg = document.getElementById("bar");
     barProg.style.backgroundColor = 'crimson'; 
     var width = 1;
