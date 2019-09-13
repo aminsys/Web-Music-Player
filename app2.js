@@ -7,25 +7,9 @@ function page(){
 
 var songs = [
 
-    'assets/beyonce/crzy_n_luv.mp3',
-    'assets/beyonce/gul.mp3',
-    'assets/beyonce/halo.mp3',
-    'assets/beyonce/independent_wmn.mp3',
-    'assets/beyonce/los_m_brth.mp3',
-    'assets/beyonce/nnn.mp3',
-    'assets/Janet/Alright.mp3',
-    'assets/Janet/Black Cat.mp3',
-    'assets/Janet/Control.mp3',
-    'assets/Janet/Escapade.mp3',
-    'assets/Janet/Love Will Never Do.mp3',
-    'assets/Janet/Miss You Much.mp3',
-    'assets/Janet/Rhythm Nation.mp3',
-    'assets/Janet/Runaway.mp3',
-    'assets/Janet/Thats The Way Love Goes.mp3',
-    'assets/Janet/The Pleasure Principal.mp3',
-    'assets/Janet/What Have You Done For Me Lately.mp3',
-    'assets/Janet/When I Think Of You.mp3',
-    'assets/beyonce/luvntp.mp3'
+    'assets/songs/08 - Fushigi Purupuru Pururin Rin!.mp3',
+    'assets/songs/03 - Shizukeganuma.mp3',
+    'assets/songs/04. 刃.mp3'
 ];
 console.log(songs.length);
 
