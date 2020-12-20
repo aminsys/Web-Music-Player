@@ -11,14 +11,19 @@ var songs = [
     'assets/songs/03 - Shizukeganuma.mp3',
     'assets/songs/04. 刃.mp3'
 ];
-console.log(songs.length);
+
+var songTitle = [
+    'Fushigi Pururpuru Pururin Rin', 'Shizukeganuma', 'Yaiba'
+];
+// console.log(songs.length);
 
 function playSong(){
     var randomSong = (Math.floor(Math.random() * songs.length));
+    document.getElementById('songTitle').innerHTML = songTitle[randomSong];
     sample = new Audio (songs[randomSong]);
     sample.play();
     document.getElementById('audioP').disabled = true;
-    console.log(randomSong);
+    console.log(randomSong + ' ' + songTitle[randomSong]);
     
     var barProg = document.getElementById("bar");
     barProg.style.backgroundColor = 'crimson'; 
@@ -27,12 +32,13 @@ function playSong(){
     function frame() {
         if (width >= 100) {
             barProg.style.backgroundColor = 'limegreen';
-            document.getElementById('procent').style.color = 'limegreen';
+            document.getElementById('timeLeft').style.color = 'limegreen';
             clearInterval(id);
         } else {
             width = (sample.currentTime / sample.duration) * 100; 
             barProg.style.width = width + '%'; 
-            document.getElementById('procent').innerHTML = ((sample.currentTime / sample.duration) * 100 | 0) + '%';
+            // document.getElementById('timeLeft').innerHTML = ((sample.currentTime / sample.duration) * 100 | 0) + '%';
+            document.getElementById('timeLeft').innerHTML = (sample.duration / 60).toFixed(0) + ':' + (sample.duration % 60).toFixed(0) + ' - ' + (sample.currentTime / 60).toFixed(0) + ':' + (sample.currentTime % 60).toFixed(0);
         }
     }
 }

@@ -103,7 +103,7 @@
     position: absolute;
     margin-left: 25%;
     width: 50%;
-    height: 5px;
+    height: 10px;
     background-color: yellow;
     opacity: 0.7;
 }
@@ -111,19 +111,24 @@
 
 #bar
 {
-    position: absolute;
+    position: relative;
     width: 1%;
     height: 100%;
 }
 
-#procent
+#timeLeft
 {
     position: absolute;
-    margin-top: 5px;
-    margin-left: 5px;
     text-align: center;
-    line-height: 10x;
     color: crimson;
-    font-size: 10px;
+    font-size: 25px;
+    width: max-content;
 }
+
+#songTitle{
+    width: max-content;  
+    font-size: 25px;
+}
+
+
 
