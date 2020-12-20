@@ -38,7 +38,9 @@ function playSong(){
             width = (sample.currentTime / sample.duration) * 100; 
             barProg.style.width = width + '%'; 
             // document.getElementById('timeLeft').innerHTML = ((sample.currentTime / sample.duration) * 100 | 0) + '%';
-            document.getElementById('timeLeft').innerHTML = (sample.duration / 60).toFixed(0) + ':' + (sample.duration % 60).toFixed(0) + ' - ' + (sample.currentTime / 60).toFixed(0) + ':' + (sample.currentTime % 60).toFixed(0);
+            var padSecondCurrent = Math.floor(sample.currentTime % 60) <= 9 ? '0' + Math.floor(sample.currentTime % 60) : Math.floor(sample.currentTime % 60);
+            var padSecondTotal = Math.floor(sample.duration % 60) <= 9 ? '0' + Math.floor(sample.duration % 60) : Math.floor(sample.duration % 60);
+            document.getElementById('timeLeft').innerHTML = Math.floor(sample.duration / 59) + ':' + padSecondTotal + ' - ' + Math.floor(sample.currentTime / 59) + ':' + padSecondCurrent;
         }
     }
 }
